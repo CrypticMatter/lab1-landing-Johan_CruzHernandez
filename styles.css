@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    width: 100%;
+    padding: 100px 15px;
+    background-color: #454545;
+    color: black;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0078AA;
+    color: black;
+    height: 5rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin-left: 7rem;
+    margin-right: 25rem;
+    color: #FDF4F5;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    font-weight:bold;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #FDF4F5;;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li a:hover {
+    color: white;
+    background-color: green;
+}
+
+.order-now-btn {
+    display: block;
+    margin-right: 10rem;
+    border-radius: 5px;
+    background-color: #F2DF3A;
+    padding: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.add-to-cart-btn {
+    display: block;
+    margin-right: 10rem;
+    border-radius: 5px;
+    background-color: #F2DF3A;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+.order-now-btn:hover {
+    color: white;
+    background-color: red;
+    transition: all ease 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    color: white;
+    background-color: red;
+    transition: all ease 0.3s;
+
+}
+
+
+#large-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    Background-color: #F2DF3A;
+}
+
+#job-positions {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.small-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.cta-box {
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+
+.blog-img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text span {
+    color: green;
+    font-size: 1.0rem;
+    font-weight: 600;
+}
+
+.text .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #272727;
+}
+
+.text .title:hover {
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+
+.text p {
+    color: black;
+    font-size: 0.9rem;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertial;
+    overflow: hidden;
+    text-overflow: ellopsis;
+    margin: 20px 0px;
+}
+
+.text a {
+    color: red;
+}
+
+.text a:hover {
+    color: pink;
+    transform: all ease 0.3s;
+}
+
+#job-positions {
+    position: relative;
+    text-align: center;
+    height: 225px;
+    background-color: #0078AA;
+}
+
+.cta-text {
+    position: absolute;
+    top: 25%;
+    left: 10%
+}
+
+.cta-text p {
+    color: white;
+    font-weight: 10000;
+    font-size: 50px
+}
+
+.career-btn {
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    display: block;
+    margin-right: 10rem;
+    border-radius: 20px;
+    background-color: #F2DF3A;
+    padding: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.career-btn:hover {
+    color: white;
+    background-color: red;
+    transition: all ease 0.3s;
+}
+
+footer div {
+    color: white;
+    text-align: center;
+}
+
+.column-1 {
+    margin-left: 300px;
+    margin-right: 100px;
+}
+
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+.column-3 ul li{
+    list-style: none;
+}
