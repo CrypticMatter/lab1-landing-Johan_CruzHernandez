@@ -33,13 +33,35 @@ footer {
     display: flex;
 }
 
-.navbar {
+.navbar-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #0078AA;
     color: black;
     height: 5rem;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
 }
 
 .logo {
@@ -58,24 +80,24 @@ footer {
     font-weight:bold;
 }
 
-.navbar-links ul {
+.navbar-desktop-links ul {
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.navbar-links li {
+.navbar-desktop-links li {
     list-style: none;
 }
 
-.navbar-links li a {
+.navbar-desktop-links li a {
     text-decoration: none;
     color: #FDF4F5;;
     padding: 1rem;
     display: block;
 }
 
-.navbar-links li a:hover {
+.navbar-desktop-links li a:hover {
     color: white;
     background-color: green;
 }
@@ -266,4 +288,77 @@ form input {
 
 .column-3 ul li{
     list-style: none;
+}
+
+/* @media(max-width:1250px) {
+    .cta-box {
+        width: 300px;
+    }
+}
+
+@media(max-width:1100px) {
+    .cta-box {
+        width:70%;
+    }
+}
+
+@media(max-width:550px) {
+    .cta-box {
+        margin: 20px 10px;
+        width: 100%
+    }
+    #large-container {
+        padding: 20px;
+    }
+} */
+
+@media only screen and (max-width: 640px) {
+    #large-container {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .column-1 {
+        margin-left: 100px;
+        margin-bottom: 40px;
+    }
+    .career-btn {
+        top: 80%;
+    }
+    .navbar-desktop {
+        display: none;
+    }
+    .navbar-mobile {
+        display: flex;
+        background-color: #0078AA;
+    }
+    .navbar-mobile-links {
+        display: none;
+        width: 100%;
+    }
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-mobile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-mobile-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-mobile-links li {
+        text-align: center;
+    }
+    .navbar-mobile-links li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-mobile-links.active {
+        display: flex;
+    }
 }
